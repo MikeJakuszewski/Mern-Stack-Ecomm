@@ -15,6 +15,7 @@ import Loader from "../components/Loader";
 import Message from "../components/Message";
 import { useGetProductDetailsQuery } from "../slices/productsApiSlice";
 import { addToCart } from "../slices/cartSlice";
+import { FaTrash } from "react-icons/fa";
 
 const ProductScreen = () => {
   const { id: productId } = useParams();
