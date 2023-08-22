@@ -13,10 +13,10 @@ import { protect, admin } from "../middleware/authMiddleware.js";
 router.post("/", protect, addOrderItems);
 router.get("/mine", protect, getMyOrders);
 router.put("/:id/pay", protect, updateOrderToPaid);
+router.get("/:id", protect, getOrderById);
 
 //admin
 
-router.get("/:id", protect, admin, getOrderById);
 router.put("/:id/deliver", protect, admin, updateOrderToDelivered);
 router.get("/", protect, admin, getOrders);
 
