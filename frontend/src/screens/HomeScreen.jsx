@@ -1,6 +1,7 @@
 import { Row, Col } from "react-bootstrap";
 import { useParams, Link } from "react-router-dom";
 import Product from "../components/Product";
+import Meta from "../components/Meta";
 import { useGetProductsQuery } from "../slices/productsApiSlice";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
@@ -31,6 +32,7 @@ const HomeScreen = () => {
         </Message>
       ) : (
         <>
+          <Meta />
           <h1>Latest Products</h1>
           <Row>
             {data.products.map((product) => {
