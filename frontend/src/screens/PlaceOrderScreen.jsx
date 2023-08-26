@@ -41,7 +41,6 @@ const PlaceOrderScreen = () => {
       toast.error(error);
     }
   };
-  console.log(cart);
 
   return (
     <>

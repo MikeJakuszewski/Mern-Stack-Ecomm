@@ -44,7 +44,6 @@ const ProductScreen = () => {
 
   const addToCartHandler = () => {
     dispatch(addToCart({ ...product, qty }));
-    console.log(dispatch(addToCart({ ...product, qty })));
     navigate("/cart");
   };
 
