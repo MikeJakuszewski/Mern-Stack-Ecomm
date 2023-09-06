@@ -7,7 +7,7 @@ import { useLogoutMutation } from "../slices/usersApiSlice";
 import { logout } from "../slices/authSlice";
 import { resetCart } from "../slices/cartSlice";
 import SearchBox from "./SearchBox";
-import logo from "../assets/logo.png";
+import logo from "../assets/TN-logo.png";
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -36,8 +36,16 @@ const Header = () => {
           <LinkContainer to="/">
             <Navbar.Brand>
               {" "}
-              <img src={logo} alt="logo" />
-              ProShop
+              <img
+                src={logo}
+                alt="logo"
+                style={{
+                  width: "80px",
+                  borderRadius: "50%",
+                  marginRight: "1rem",
+                }}
+              />
+              TechNexus
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
